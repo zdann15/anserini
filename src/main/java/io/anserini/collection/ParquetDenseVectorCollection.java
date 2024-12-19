@@ -152,7 +152,7 @@ public class ParquetDenseVectorCollection extends DocumentCollection<ParquetDens
         throw new NoSuchElementException("End of file reached");
       }
       
-    // Read each record from the Parquet file
+      // Read each record from the Parquet file
       // Extract the docid (String) from the record
       String docid = record.getString("docid", 0);
       ids.add(docid);
